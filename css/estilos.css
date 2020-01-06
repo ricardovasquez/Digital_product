@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Variables */
+:root{
+  --green-color: #7ACC2D;
+  --white-color:white;
+  --black-color:#313337;
+/* tipografía */
+  --normal:12px;
+  /* Espaciado */
+  --space:10px;
+
+  /* box shadow */
+  --box: 0 0 2px #c1bcbc;
+}
+/* Variables */
+
+html,body{
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, label{
+  font-size: var(--normal);
+}
+
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: 10px;
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+
+}
+nav li{
+  padding-right: 10px;
+  list-style: none;
+}
+nav li a{
+  color: gray;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--white-color);
+}
+
+/* aquí empieza el main section */
+
+.main_section{
+padding: 10%;
+text-align: center;
+}
+
+.products{
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center top;
+  height: 100px;
+  padding: 25%;
+  display: flex;
+}
+
+.product{
+  padding: 10px;
+  margin-top: -300px;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22
+
+}
+
+
+.caracteristicas{
+  padding: 25%;
+  display: flex;
+}
+
+
+/* Venta */
+
+
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: 10px;
+
+}
+
+.modulo_pago_image{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+}
+
+.data{
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+  margin-top: 10px;
+}
+
+
+/* footer */
+footer{
+  display: flex;
+  background-color: var(--black-color);
+  justify-content: space-between;
+  font-size: var(--normal);
+  padding: 1%;
+  color: var(--white-color);
+}
+
+.contact a{
+  color: var(--green-color);
+}
+
+.option{
+  padding-left: : 10px;
+  color: gray;
+  text-decoration: none;
+
+}
